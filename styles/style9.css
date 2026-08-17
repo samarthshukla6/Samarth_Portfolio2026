@@ -343,6 +343,61 @@ html {
   margin: 8px 0 12px 0;
 }
 
+.stack-card {
+  padding: 28px;
+}
+
+.stack-grid {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.stack-grid:last-child {
+  margin-bottom: 0;
+}
+
+.stack-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stack-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-group {
+  background-color: #121316;
+  border: 1px solid #2a2c32;
+  border-radius: 20px;
+  padding: 20px 18px 16px 18px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.stack-group-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stack-group-label .exp-dot {
+  margin: 0;
+}
+
+.section-experience .stack-group-label span:not(.exp-dot) {
+  color: #b794ff !important;
+  -webkit-text-fill-color: #b794ff !important;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stack-group .chip-row {
+  margin: 0;
+}
+
 .chip {
   background-color: #121316;
   color: #d6d6d6;
@@ -546,8 +601,31 @@ html {
   text-align: center;
 }
 
-.skill-wrap {
-  margin-top: 30px;
+.prepare-info h4 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.prepare-info p {
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.section5 .bullet-pt2 {
+  align-items: flex-start;
+}
+
+.section5 .dot2 {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.section5 .work {
+  color: #b794ff;
 }
 
 .skill-wrap h4 {
@@ -712,6 +790,15 @@ html {
 
   .exp-card {
     padding: 28px 22px;
+  }
+
+  .stack-card {
+    padding: 18px;
+  }
+
+  .stack-grid-3,
+  .stack-grid-2 {
+    grid-template-columns: 1fr;
   }
 
   .honor-trio {
