@@ -601,44 +601,68 @@ html {
 @media (max-width: 985px) {
   .navbar {
     width: 90%;
+    height: auto;
+    min-height: 56px;
+    padding: 6px 10px;
+    flex-wrap: wrap;
   }
 
-    .nav-items {
-      font-size: 12px;
-      margin: 3px;
-      padding: 4px;
-    }
+  .nav-items {
+    font-size: 12px;
+    margin: 3px;
+    padding: 4px;
+  }
 
-    .nav-optional {
-      display: none;
-    }
+  .nav-optional {
+    display: none;
+  }
 
-    .nav-mobile-only {
-      display: inline-block;
-    }
+  .nav-mobile-only {
+    display: inline-block;
+  }
+
+  .home-left-container {
+    padding-top: 210px;
+    align-items: center;
+  }
 
   .home-left-container > p {
     width: 100%;
   }
 
-  .about-copy .info {
-    text-align: center;
+  .home-left-container > h6.hero-sub {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+
+  .hero-cmu {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
   }
 
   .hero-actions {
     justify-content: center;
-    flex-direction: column;
-  }
-
-  .hero-sub {
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
   }
 
-  .hero-btn {
-    min-width: 240px;
-    width: 100%;
-    max-width: 320px;
+  .hero-btn,
+  .home-left-container > a > button.hero-btn,
+  .hero-actions > a > button {
+    min-width: unset;
+    width: auto;
+    max-width: none;
+    padding: 0.85rem 2.2rem;
+    font-size: 16px;
+  }
+
+  .about-copy .info {
+    text-align: center;
   }
 
   .section-stats,
