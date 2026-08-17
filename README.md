@@ -2,6 +2,8 @@
 
 Personal portfolio of [Samarth Shukla](https://www.linkedin.com/in/samarthshuklacmu), Software and AI Engineer and Master's student in Software Engineering (Scalable Systems) at Carnegie Mellon University, School of Computer Science.
 
+**Live site:** [https://samarth-portfolio2026.vercel.app/](https://samarth-portfolio2026.vercel.app/)
+
 The site keeps the original Samnics 3D look: Three.js scenes, GSAP and ScrollMagic scroll, audio, and Blender models. Copy, sections, and layout are the portfolio.
 
 **Live stack:** Vite, Three.js, GSAP, ScrollMagic, Draco-compressed GLB models.
@@ -55,6 +57,7 @@ Models are compressed with [Draco](https://google.github.io/draco/).
 
 ## Contact
 
+- Site: [samarth-portfolio2026.vercel.app](https://samarth-portfolio2026.vercel.app/)
 - Email: [sshukla3@andrew.cmu.edu](mailto:sshukla3@andrew.cmu.edu)
 - Phone: [+1 412-496-1208](tel:+14124961208)
 - GitHub: [samarthshukla6](https://github.com/samarthshukla6)
