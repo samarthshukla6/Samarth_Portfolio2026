@@ -6,6 +6,7 @@ import './styles/style5.css'
 import './styles/style6.css'
 import './styles/style7.css'
 import './styles/style8.css'
+import './styles/style9.css'
 
 import * as THREE from 'three'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
@@ -13,7 +14,7 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 
-console.log("Welcome to TRINITY 🚀");
+console.log("Welcome to Samarth's world 🚀");
 
 /*
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
@@ -415,7 +416,7 @@ if (!mobile) {
         '/fonts/helvetiker_regular.typeface.json',
         (font) => {
             const textGeometry = new TextGeometry(
-                'TRINITY',
+                'IEEE',
                 {
                     font: font,
                     size: 0.5,
@@ -453,7 +454,7 @@ const positions = new Float32Array(particlesCount * 3)
 
 for (let i = 0; i < particlesCount; i++) {
     positions[i * 3 + 0] = (Math.random() - 0.5) * 10
-    positions[i * 3 + 1] = objectsDistance * 0.5 - (Math.random()) * objectsDistance * 8
+    positions[i * 3 + 1] = objectsDistance * 0.5 - (Math.random()) * objectsDistance * 16
     positions[i * 3 + 2] = (Math.random() - 0.5) * 10
 }
 
@@ -697,72 +698,36 @@ let obj35 = document.getElementById('click-35');
 let obj36 = document.getElementById('click-36');
 let obj37 = document.getElementById('click-pop-up-close')
 let obj38 = document.getElementById('click-38')
+let obj39 = document.getElementById('click-39')
+let obj40 = document.getElementById('click-40')
+let obj41 = document.getElementById('click-41')
+let obj42 = document.getElementById('click-42')
+
+const playHover = () => { ctx.resume(); hoverSound.play() }
+const playClick = () => { ctx.resume(); clickSound.play() }
+const bind = (el, event, handler) => { if (el) el.addEventListener(event, handler) }
 
 if (!mobile) {
-    obj1.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    obj2.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    obj3.addEventListener('mouseenter', () => { ctx.resume(); hoverSound.play() })
-    // obj4.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj5.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj6.addEventListener('mouseenter', () => { hoverSound.play() })
-    obj7.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    // obj8.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj9.addEventListener('mouseenter', () => { hoverSound.play() })
-    obj10.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    // obj11.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj12.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj13.addEventListener('mouseenter', () => { hoverSound.play() })
-    obj14.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    // obj15.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj16.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj17.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj28.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj29.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj30.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj31.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj32.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj33.addEventListener('mouseenter', () => { hoverSound.play() })
-    // obj34.addEventListener('mouseenter', () => { hoverSound.play() })
-    obj35.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
-    obj36.addEventListener('mouseenter', () => {  ctx.resume(); hoverSound.play() })
+    bind(obj1, 'mouseenter', playHover)
+    bind(obj2, 'mouseenter', playHover)
+    bind(obj3, 'mouseenter', playHover)
+    bind(obj7, 'mouseenter', playHover)
+    bind(obj10, 'mouseenter', playHover)
+    bind(obj14, 'mouseenter', playHover)
+    bind(obj35, 'mouseenter', playHover)
+    bind(obj36, 'mouseenter', playHover)
+    bind(obj39, 'mouseenter', playHover)
+    bind(obj40, 'mouseenter', playHover)
+    bind(obj41, 'mouseenter', playHover)
+    bind(obj42, 'mouseenter', playHover)
 }
-obj1.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj2.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj3.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj4.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj5.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj6.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj7.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj8.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj9.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj10.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj11.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj12.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj13.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj14.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj15.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj16.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj17.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj18.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj19.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj20.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj21.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj22.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj23.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj24.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj25.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj26.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj27.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj28.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj29.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj30.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj31.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj32.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj33.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj35.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj36.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj37.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
-obj38.addEventListener('click', () => {  ctx.resume(); clickSound.play() })
+
+[
+    obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10,
+    obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20,
+    obj21, obj22, obj23, obj24, obj25, obj26, obj27, obj28, obj29, obj30,
+    obj31, obj32, obj33, obj35, obj36, obj37, obj38, obj39, obj40, obj41, obj42
+].forEach((el) => bind(el, 'click', playClick))
 
 
 /*
